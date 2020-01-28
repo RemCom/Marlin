@@ -950,10 +950,10 @@
 
 // Most probes should stay away from the edges of the bed, but
 //#define MIN_PROBE_EDGE 30
-#define MIN_PROBE_EDGE_LEFT 30
-#define MIN_PROBE_EDGE_RIGHT 30
-#define MIN_PROBE_EDGE_BACK 60
-#define MIN_PROBE_EDGE_FRONT 30
+#define MIN_PROBE_EDGE_LEFT 25
+#define MIN_PROBE_EDGE_RIGHT 25
+#define MIN_PROBE_EDGE_BACK 10
+#define MIN_PROBE_EDGE_FRONT 10
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
