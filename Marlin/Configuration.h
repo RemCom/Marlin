@@ -485,9 +485,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Ultimaker
- #define DEFAULT_Kp 18.64
- #define DEFAULT_Ki 1.47
- #define DEFAULT_Kd 59.18
+  #define  DEFAULT_Kp 45.0
+  #define  DEFAULT_Ki 4.20
+  #define  DEFAULT_Kd 120
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -528,7 +528,7 @@
  * When set to any value below 255, enables a form of PWM to the bed that acts like a divider
  * so don't use it unless you are OK with PWM on your bed. (See the comment on enabling PIDTEMPBED)
  */
-#define MAX_BED_POWER 160 // limits duty cycle to bed; 255=full current
+#define MAX_BED_POWER 255 // limits duty cycle to bed; 255=full current
 
 #if ENABLED(PIDTEMPBED)
   //#define MIN_BED_POWER 0
@@ -536,9 +536,9 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 254.4
-  #define DEFAULT_bedKi 45.67
-  #define DEFAULT_bedKd 354.2
+  #define  DEFAULT_bedKp 128.82
+  #define  DEFAULT_bedKi 16.91
+  #define  DEFAULT_bedKd 245.36
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -566,7 +566,7 @@
  * Note: For Bowden Extruders make this large enough to allow load/unload.
  */
 #define PREVENT_LENGTHY_EXTRUDE
-#define EXTRUDE_MAXLENGTH 660
+#define EXTRUDE_MAXLENGTH 300
 
 //===========================================================================
 //======================== Thermal Runaway Protection =======================
